@@ -3,7 +3,7 @@ y = 0;
 drawCircle = "";
 drawRect = "";
 
-var SpeechRecognition = window.WebkitSpeechRecognition;
+var SpeechRecognition = window.webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
 
 function start() {
