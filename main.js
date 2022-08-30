@@ -15,13 +15,13 @@ recognition.onresult = function(event) {
     console.log(event);
     var content = event.results[0][0].transcript;
     document.getElementById("status").innerHTML = "The Speech has been recognized as: " + content;
-    if(content == "circle") {
+    if(content == "circle" || content == "Circle") {
         x = Math.floor(Math.random() * 900);
         y = Math.floor(Math.random() * 600);
         document.getElementById("status").innerHTML = "Started drawing circle";
         drawCircle = "set";
     } 
-    if(content == "rectangle") {
+    if(content == "rectangle" || content == "Rectangle") {
         x = Math.floor(Math.random() * 900);
         y = Math.floor(Math.random() * 600);
         document.getElementById("status").innerHTML = "Started drawing rectangle";
