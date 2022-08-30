@@ -13,7 +13,7 @@ function start() {
 
 recognition.onresult = function(event) {
     console.log(event);
-    var content = event.result[0][0].transcript;
+    var content = event.results[0][0].transcript;
     document.getElementById("status").innerHTML = "The Speech has been recognized as: " + content;
     if(content = "circle") {
         x = Math.floor(Math.random() * 900);
